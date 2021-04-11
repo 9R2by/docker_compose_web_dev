@@ -20,3 +20,7 @@
  please change the db settings to your needs!    
 
 
+     
+ I added a index.php to the source folder to check if the database connection worked flawlessly   
+ If you curl or browse to 127.0.0.1 it should return something like "Success: A proper connection to MySQL was made!" 
+

@@ -15,7 +15,7 @@
  The images should now load and build.
  The webpage should be live on: 127.0.0.1:80    
  The database container can be reached @127.0.0.1:3306    
- (for editing purposes "Beekeeper Studio" can be used for example)   
+ (for editing purposes "Beekeeper Studio" or "DBeaver" can be used for example)   
  
  please change the db settings to your needs!    
 
@@ -24,3 +24,4 @@
  I added a index.php to the source folder to check if the database connection worked flawlessly   
  If you curl or browse to 127.0.0.1 it should return something like "Success: A proper connection to MySQL was made!" 
 
+ ATTENTION: importing large databases can take some time!

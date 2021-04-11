@@ -1,0 +1,40 @@
+version: "3.9"
+services:
+
+  apache_php:
+    build: ./apache_php
+    ports: 
+      - "127.0.0.1:80:80"
+    volumes:
+     - "./src:/var/www/html"
+    networks:
+      - my_net
+
+  #https://hub.docker.com/_/mariadb    
+  db:
+    image: mariadb:latest
+    restart: always
+    environment: 
+      MYSQL_DATABASE: my
+      MYSQL_USER: root
+      MYSQL_PASSWORD: 
+      MYSQL_ROOT_PASSWORD: example
+    ports:
+      - "127.0.0.1:3306:3306"
+    volumes: 
+      - ./my.sql:/docker-entrypoint-initdb.d/my.sql 
+    
+    networks:
+      my_net:
+        aliases:
+          - my_db  
+
+volumes:
+  my.sql:
+
+networks:
+  my_net:
+
+
+#mariadb:latest 
+#https://github.com/MariaDB/mariadb-docker/blob/5d57b119775458cd37994a0f313ea3a29603efbb/10.5/Dockerfile

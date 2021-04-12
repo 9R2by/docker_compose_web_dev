@@ -27,5 +27,5 @@
 
  ATTENTION: importing large databases can take some time!
  
- All the above was tested on Windows 10 with Docker Desktop.
+ All the above was tested on Windows 10 with Docker Desktop.    
  @9R2by 2021

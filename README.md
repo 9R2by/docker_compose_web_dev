@@ -15,14 +15,14 @@
  The database container can be reached @127.0.0.1:3306    
  (for editing purposes "Beekeeper Studio" or "DBeaver" can be used for example)
         
- Daily Usage:
+ Daily Usage:     
  Go to the docker_compose folder and type docker-compose up in your terminal. 
  
  please change the db settings to your needs!    
 
 
      
- I added a index.php to the source folder to check if the database connection worked flawlessly   
+ I added an index.php to the source folder to check if the database connection works flawlessly   
  If you curl or browse to 127.0.0.1 it should return something like "Success: A proper connection to MySQL was made!" 
 
  ATTENTION: importing large databases can take some time!

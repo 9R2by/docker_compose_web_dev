@@ -18,7 +18,7 @@
  Daily Usage:     
  Go to the docker_compose folder and type docker-compose up in your terminal. 
  
- please change the db settings to your needs!    
+ Please change the db settings to your needs!    
 
 
      

@@ -13,7 +13,6 @@
  The images should now load and build.
  The webpage should be live @127.0.0.1:80    
  The database container can be reached @127.0.0.1:3306    
- (for editing purposes "Beekeeper Studio" or "DBeaver" can be used for example)
         
  Daily Usage:     
  Go to the docker_compose folder and type docker-compose up in your terminal. 
